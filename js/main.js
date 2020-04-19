@@ -44,7 +44,7 @@ window.onload = (function () {
       let cellVal = document.createAttribute("cell-number");
       cellVal.nodeValue = counter;
       gameCell[i].setAttributeNode(cellVal);
-      gameCell[i].innerHTML = "";
+      gameCell[i].innerHTML = counter;
       //console.log(gameCell[i]);
       counter++;
     }
@@ -58,7 +58,7 @@ window.onload = (function () {
         e = e || window.event;
         let target = e.target || e.srcElement,
           text = target.textContent || target.innerText;
-        if (chosenNumber !== 0) {
+        if (chosenNumber !== 0 || chosenNumber !== undefined) {
           target.innerHTML = chosenNumber.toString();
         } else {
           target.innerHTML = "";

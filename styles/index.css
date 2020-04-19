@@ -1,0 +1,126 @@
+:root {
+    --dark-color: #32322c;
+    --dark-green-color: #13c4A3;
+    --green-color: #36F1CD;
+    --blue-color: #39A0ED;
+    --grey-color: #4C6085;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.header {
+    display: block;
+}
+
+.main-content {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-green-color);
+    position: fixed;
+    top: 85%;
+    left: 0;
+    width: 100%;
+}
+
+/* Play button */
+#proceedBtn {
+    border: 1px solid var(--blue-color);
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--blue-color);
+    background-color: #fff;
+}
+
+/*===============================================
+                game.html
+===============================================*/
+#gameHeader {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+}
+
+/*<<<<<<<<<<<<<<<<< Home button >>>>>>>>>>>>>>>>>>>>>>*/
+.homeBtn {
+    background: var(--dark-color);
+    padding: 5px;
+    transition: 1.0s;
+}
+
+.homeBtn i {
+    color: var(--dark-green-color);
+
+}
+
+.homeBtn:hover {
+    border-radius: 15px;
+    background-color: var(--dark-green-color);
+}
+
+.homeBtn:hover i {
+    color: var(--dark-color);
+}
+
+/*<<<<<<<<<<<<<<<<<< End of Home Button >>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+td {
+    background: #fff;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.numbers table {
+    border-spacing: 5px;
+}
+
+.numbers td {
+    background-color: var(--blue-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+.inputBtn {
+    background-color: var(--blue-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+
+.numbers td:hover {
+    background-color: var(--green-color);
+}
+
+.numbers td:hover .inputBtn {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+.gameCell:hover {
+    background-color: #fff;
+}

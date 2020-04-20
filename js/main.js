@@ -44,7 +44,7 @@ window.onload = (function () {
       let cellVal = document.createAttribute("cell-number");
       cellVal.nodeValue = counter;
       gameCell[i].setAttributeNode(cellVal);
-      gameCell[i].innerHTML = counter;
+      gameCell[i].innerHTML = "";
       //console.log(gameCell[i]);
       counter++;
     }
@@ -71,6 +71,6 @@ window.onload = (function () {
   //TEST Button
   let testBtn = document.querySelector(".testBtn");
   testBtn.addEventListener("click", function () {
-    chooseNum();
+    //chooseNum();
   });
 })();

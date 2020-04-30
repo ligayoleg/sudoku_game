@@ -5,12 +5,41 @@
   const gameCells = document.querySelectorAll("#gameTable tbody tr td");
 
   function checkRow() {
-    console.log(gameRows[0].children);
+    let result = true;
+    let resArr = [];
+    for (let j = 0; j < gameRows.length; j++) {
+      for (let i = 0; i < gameRows.length; i++) {
+        resArr.push(parseInt(gameRows[0].children[i].innerHTML));
+      }
+      console.log(resArr);
+      console.log(arrMatch(checkArr, resArr.sort()));
+      resArr = [];
+    }
+    return result;
+  }
+
+  function arrMatch(arr1, arr2) {
+    // Check if the arrays are the same length
+    if (arr1.length !== arr2.length) return false;
+
+    // Check if all items exist and are in the same order
+    for (var i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) return false;
+    }
+
+    // Otherwise, return true
+    return true;
   }
 
   function giveResult() {
     let win = false;
+    if (checkRow() == false) {
+      win = false;
+    } else {
+      win = true;
+    }
     checkRow();
+    console.log(win);
     return win;
   }
 

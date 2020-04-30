@@ -1,195 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudoku</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header id="gameHeader">
-        <a href="index.html" class="homeBtn"><i class="fas fa-home"></i></a>
+      <a href="index.html" class="homeBtn"><i class="fas fa-home"></i></a>
     </header>
-    <input type="button" value="TEST" class="testBtn">
+    <input type="button" value="TEST" class="testBtn" />
     <div class="game" id="gameDiv">
-        <table id="gameTable">
-            <colgroup>
-                <col class="col col-1">
-                <col class="col col-2">
-                <col class="col col-3">
-                <col class="col col-4">
-                <col class="col col-5">
-                <col class="col col-6">
-                <col class="col col-7">
-                <col class="col col-8">
-                <col class="col col-9">
-            </colgroup>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+      <table id="gameTable">
+        <colgroup>
+          <col class="col col-1" />
+          <col class="col col-2" />
+          <col class="col col-3" />
+          <col class="col col-4" />
+          <col class="col col-5" />
+          <col class="col col-6" />
+          <col class="col col-7" />
+          <col class="col col-8" />
+          <col class="col col-9" />
+        </colgroup>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
 
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-        </table>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </table>
     </div>
 
     <div class="numbers">
-        <table>
-            <tr>
-                <td class="inputBtn" value="1">1</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="2">2</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="3">3</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="4">4</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="5">5</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="6">6</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="7">7</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="8">8</td>
-            </tr>
-            <tr>
-                <td class="inputBtn" value="9">9</td>
-            </tr>
-        </table>
+      <table>
+        <tr>
+          <td class="inputBtn" value="1">1</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="2">2</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="3">3</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="4">4</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="5">5</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="6">6</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="7">7</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="8">8</td>
+        </tr>
+        <tr>
+          <td class="inputBtn" value="9">9</td>
+        </tr>
+      </table>
     </div>
     <footer class="footer">
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/olegligay" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ligayoleg" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="footer-text">Oleg Ligay &copy;2020</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/olegligay" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/ligayoleg" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p class="footer-text">Oleg Ligay &copy;2020</p>
     </footer>
 
-
+    <script src="js/sudokuCreation.js"></script>
+    <script src="js/sudokuSolving.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/main2.js"></script>
-</body>
-
+  </body>
 </html>

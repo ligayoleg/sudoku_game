@@ -11,8 +11,30 @@
       for (let i = 0; i < gameRows.length; i++) {
         resArr.push(parseInt(gameRows[0].children[i].innerHTML));
       }
-      console.log(resArr);
+      // console.log(resArr);
       console.log(arrMatch(checkArr, resArr.sort()));
+      resArr = [];
+    }
+    return result;
+  }
+
+  function checkColumn() {
+    let result = true;
+    let resArr = [];
+    let columnsArr = [];
+    for (let i = 0; i < gameRows.length; i++) {
+      let tempArr = [];
+      for (j = 0; j < gameRows.length; j++) {}
+
+      tempArr = [];
+    }
+    //
+    for (let j = 0; j < gameRows.length; j++) {
+      for (let i = 0; i < gameRows.length; i++) {
+        resArr.push(parseInt(gameRows[0].children[i].innerHTML));
+      }
+      // console.log(resArr);
+      // console.log(arrMatch(checkArr, resArr.sort()));
       resArr = [];
     }
     return result;
@@ -33,9 +55,9 @@
 
   function giveResult() {
     let win = false;
-    if (checkRow() == false) {
+    if (checkRow() == false && checkColumn() == false) {
       win = false;
-    } else {
+    } else if (checkRow() == true && checkColumn() == true) {
       win = true;
     }
     checkRow();
@@ -43,5 +65,9 @@
     return win;
   }
 
-  giveResult();
+  //giveResult();
+  const testBtn = document.querySelector(".testBtn");
+  testBtn.addEventListener("click", function () {
+    giveResult();
+  });
 })();
